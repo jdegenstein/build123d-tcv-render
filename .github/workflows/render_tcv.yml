@@ -24,11 +24,11 @@ jobs:
           enable-cache: true
           activate-environment: true
           cache-dependency-glob: "**/*.py"
+          python-version: 3.12
 
       # 2. Create Environment & Install Libraries
       - name: Install Python Dependencies
         run: |
-          uv venv --python 3.12
           # Install build123d and tcv-screenshots
           uv pip install build123d tcv-screenshots
           
